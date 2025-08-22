@@ -76,7 +76,7 @@ def select_team(players):
 
 
 # Streamlit App
-st.title("⚽ Fantasy Premier League Optimal 11 Predictor")
+st.title("Fantasy Premier League Optimal Team Predictor")
 st.write("This app predicts the best starting 11 based on current FPL data, form, and performance.")
 
 if st.button("Generate Optimal Team"):
@@ -95,3 +95,4 @@ if st.button("Generate Optimal Team"):
     total_points = optimal_team['predicted_points'].sum()
     st.write(f"**Total Cost:** £{total_cost:.1f}m")
     st.write(f"**Predicted Total Points:** {total_points:.2f}")
+
